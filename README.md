@@ -36,3 +36,19 @@ p.sex = 'F'
 p.sex
 => female
 ```
+
+Optional I18n:
+
+```
+es:
+  sex:
+    male: "hombre"
+    he: "él"
+    female: "mujer"
+    she: "ella"
+```
+
+```ruby
+"#{p.name}. #{p.sex.he_she.capitalize} es un #{p.sex}"
+=> "Ryan. Él es un hombre"
+```
