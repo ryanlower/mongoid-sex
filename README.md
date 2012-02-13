@@ -4,6 +4,8 @@
 class Person
   include Mongoid::Document
   include Mongoid::Sex
+
+  field :name, type: String
 end
 ```
 
